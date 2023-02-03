@@ -4,21 +4,28 @@ void main() {
   runApp(const MyApp());
 }
 //state less && state full  supports hot reload
-//hot reload does not effect for the state
+//
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
+  @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(
-          backgroundColor: Colors.red,
-          body: Center(child: Text("StateLessWidget")),
-      ),
+       home: Scaffold(
+         body: Center(
+             child: Text("State Full Widgets")
+         ),
+       ),
     );
   }
 }
+
 
 
 
