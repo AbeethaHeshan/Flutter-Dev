@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 void main() {
   runApp(const MyApp());
 }
-//state less supports hot reload
+//state less && state full  supports hot reload
 //hot reload does not effect for the state
 
 class MyApp extends StatelessWidget {
