@@ -19,7 +19,7 @@ class _MyAppState extends State<MyApp> {
     return const MaterialApp(
        home: Scaffold(
          body: Center(
-             child: Text("State Full Widgets")
+             child: Text("StateFullWidgets")
          ),
        ),
     );
